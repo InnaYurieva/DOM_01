@@ -1,0 +1,79 @@
+.icons {
+    display: block; /* блочный элемент */
+    position: relative; /* Относительное позиционирование */
+    margin-left: 0px;
+    height: 45px;
+    width: 45px;
+    padding: 10px;
+   }
+   
+   .icons:hover::after {
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    top: -5px;  /* Положение подсказки */
+    left: 5px;
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: rgba(255,255,230,0.9); /* Полупрозрачный цвет фона */
+    font-size: 11px; /* Размер текста подсказки */
+    border-radius: 5px;
+    padding: 0px 1px; /* Поля */
+    letter-spacing: 1px;
+    font-weight:bold;
+    color: #808080 ;
+   }
+* {
+    box-sizing: border-box;
+}
+.container {
+    background-color: rgb(240, 228, 228);
+    width: 260px;
+    height: 250px;
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    opacity: 0;
+}
+.square {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin: 2px;
+    background: #1d1d1d;
+    box-shadow: 0 0 2px;
+    margin-bottom: 10px;
+    border: 1px solid;
+}
+
+.is-open {
+    opacity: 1;
+  }
+
+.overlay {
+    height: 100%;
+    width: 100%;
+}
+
+.div-color {
+    width: 20px;
+    height: 20px;
+    margin: 10px 5px 0px 6px;
+    background: #1d1d1d;
+    box-shadow: 0 0 2px;
+    margin-bottom: 10px;
+    border: 1px solid;
+}
+.input{
+    margin: 0 5px 0 0;
+    width: 155px;
+}
+
+.svg-colorGet:hover{
+    transform: scale(1.5);
+    transition: transform 0.15s ease;
+
+}
+   
+
